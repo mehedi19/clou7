@@ -1,0 +1,74 @@
+/* ==========================================================================
+   Design tokens — edit here to re-theme the whole site.
+   Fonts are injected by next/font in app/layout.tsx:
+     --font-body    → Inter
+     --font-display → Instrument Serif
+   ========================================================================== */
+:root {
+  /* Sky blue scale */
+  --sky-50: #f0f9ff;
+  --sky-100: #e0f2fe;
+  --sky-200: #bae6fd;
+  --sky-300: #7dd3fc;
+  --sky-400: #38bdf8;
+  --sky-500: #0ea5e9;
+  --sky-600: #0284c7;
+  --sky-700: #0369a1;
+  --sky-800: #075985;
+  --sky-900: #0c4a6e;
+
+  /* Semantic (light) */
+  --bg: #ffffff;
+  --bg-soft: #f0f9ff;
+  --surface: #ffffff;
+  --surface-2: #f7fbff;
+  --text: #0b2239;
+  --muted: #4a6479;
+  --line: #d3e6f4;
+  --brand: var(--sky-500);
+  --brand-strong: var(--sky-600);
+  --on-brand: #04223a;
+  --accent-text: var(--sky-700);
+  --dot: #bfe3f7;
+  --glow: rgba(14, 165, 233, 0.22);
+  --shadow: 0 1px 2px rgba(11, 34, 57, 0.04), 0 12px 32px -12px rgba(2, 132, 199, 0.22);
+  --header-bg: rgba(255, 255, 255, 0.78);
+
+  /* Always-dark surfaces */
+  --deep: #06263f;
+  --deep-2: #04192b;
+  --on-deep: #e8f5fe;
+  --on-deep-muted: #9cc3dc;
+
+  /* Type */
+  --font-sans: var(--font-body), "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-serif: var(--font-display), "Instrument Serif", Georgia, serif;
+
+  /* Shape & layout */
+  --radius-sm: 12px;
+  --radius: 20px;
+  --radius-lg: 32px;
+  --container: 1200px;
+  --gutter: clamp(20px, 4vw, 40px);
+  --section-y: clamp(72px, 10vw, 132px);
+  --header-h: 72px;
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #071521;
+  --bg-soft: #0a1e30;
+  --surface: #0e2840;
+  --surface-2: #0c2237;
+  --text: #e8f4fc;
+  --muted: #9bb7cb;
+  --line: #1a3b57;
+  --brand: var(--sky-400);
+  --brand-strong: var(--sky-300);
+  --accent-text: var(--sky-300);
+  --dot: #1c4666;
+  --glow: rgba(56, 189, 248, 0.2);
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 16px 36px -14px rgba(0, 0, 0, 0.6);
+  --header-bg: rgba(7, 21, 33, 0.78);
+}
