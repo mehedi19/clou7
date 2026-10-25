@@ -16,6 +16,8 @@
 .hero__inner h1 { max-width: 15ch; }
 .hero__sub { margin-top: 28px; max-width: 64ch; }
 .hero__ctas { margin-top: 36px; display: flex; flex-wrap: wrap; gap: 14px 18px; align-items: center; justify-content: center; }
+.hero__primary-cta,
+.hero__secondary-cta { border-radius: 12px; }
 .hero__primary-cta > span { color: var(--bg); }
 .hero__primary-cta svg path { stroke: var(--bg); }
 

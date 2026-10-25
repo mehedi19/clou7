@@ -40,7 +40,11 @@ export function Hero() {
           <ButtonLink href={hero.ctas.primary.href} className="hero__primary-cta" arrow>
             {hero.ctas.primary.label}
           </ButtonLink>
-          <ButtonLink href={hero.ctas.secondary.href} variant="secondary">
+          <ButtonLink
+            href={hero.ctas.secondary.href}
+            variant="secondary"
+            className="hero__secondary-cta"
+          >
             {hero.ctas.secondary.label}
           </ButtonLink>
           <a href={hero.ctas.tertiary.href} className="link-arrow">

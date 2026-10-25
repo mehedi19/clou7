@@ -29,7 +29,7 @@
 .header__link:hover { background: var(--sky-100); color: var(--sky-800); }
 :root[data-theme="dark"] .header__link:hover { background: var(--surface); color: var(--sky-300); }
 .header__actions { display: flex; align-items: center; gap: 10px; }
-.header__cta { height: 44px; padding: 0 20px; }
+.header__cta { height: 44px; padding: 0 20px; border-radius: 12px; }
 .header__cta > span { color: var(--bg); }
 .header__burger { display: none; }
 
