@@ -16,6 +16,8 @@
 .hero__inner h1 { max-width: 15ch; }
 .hero__sub { margin-top: 28px; max-width: 64ch; }
 .hero__ctas { margin-top: 36px; display: flex; flex-wrap: wrap; gap: 14px 18px; align-items: center; justify-content: center; }
+.hero__primary-cta > span { color: var(--bg); }
+.hero__primary-cta svg path { stroke: var(--bg); }
 
 .hero__stage {
   position: relative; margin-top: clamp(40px, 6vw, 72px);
@@ -24,6 +26,15 @@
   border: 1px solid var(--line); box-shadow: var(--shadow); backdrop-filter: blur(6px);
 }
 :root[data-theme="dark"] .hero__stage { background: linear-gradient(180deg, rgba(14, 40, 64, 0.8), rgba(14, 40, 64, 0.4)); }
+.hero .hero__stage.hero__stage--plain {
+  border-width: 0;
+  border-color: transparent;
+  border-style: none;
+  border-radius: 0;
+  box-shadow: none;
+  backdrop-filter: none;
+  background-image: none;
+}
 .hero__channels { position: absolute; left: 50%; bottom: clamp(12px, 2.4vw, 28px); transform: translateX(-50%); display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; width: max-content; max-width: 94%; }
 .hero__channels li {
   display: inline-flex; align-items: center; gap: 8px; padding: 9px 16px; border-radius: 999px;

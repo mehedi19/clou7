@@ -37,7 +37,7 @@ export function Hero() {
           {hero.sub}
         </p>
         <div className="hero__ctas rise" style={{ ["--d" as string]: "280ms" }}>
-          <ButtonLink href={hero.ctas.primary.href} arrow>
+          <ButtonLink href={hero.ctas.primary.href} className="hero__primary-cta" arrow>
             {hero.ctas.primary.label}
           </ButtonLink>
           <ButtonLink href={hero.ctas.secondary.href} variant="secondary">
@@ -51,7 +51,10 @@ export function Hero() {
       </div>
 
       <div className="container">
-        <div className="hero__stage rise" style={{ ["--d" as string]: "380ms" }}>
+        <div
+          className="hero__stage hero__stage--plain rise"
+          style={{ ["--d" as string]: "380ms" }}
+        >
           <WorldMap />
           <ul className="hero__channels" aria-label="Supported payment channels">
             {hero.channels.map((c, i) => (
